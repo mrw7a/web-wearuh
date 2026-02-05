@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WearUH — Clothing Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="logo">WearU</h1>
+        <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#collection">Shop</a>
+        <a href="#featured">Featured</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <input class="search" placeholder="Search" aria-label="Search products">
+        <a class="cart" href="#">Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1520975698518-9c8f1ab7c3b9?q=80&w=1600&auto=format&fit=crop')">
+      <div class="overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2>Fresh styles for every season</h2>
+          <p>Quality garments, thoughtful design, and a wardrobe you'll love.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#collection">Explore Collection</a>
+            <a class="btn btn-ghost" href="#featured">See Featured</a>
+          </div>
+        </div>
+        <div class="hero-feat">
+          <div class="pill">New: Spring Drop</div>
+          <img src="https://images.unsplash.com/photo-1526178616624-0a29c0b6f0f7?q=80&w=600&auto=format&fit=crop" alt="Featured"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="collection" class="collection container">
+      <h3>Shop by Category</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1520975910218-1a3b8e8d0b6d?q=80&w=800&auto=format&fit=crop" alt="Tops category">
+            <span class="badge">Popular</span>
+          </div>
+          <h4>Tops</h4>
+          <p>Shirts, tees, and sweaters in versatile styles.</p>
+          <a class="btn btn-sm" href="#">View Tops</a>
+        </article>
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop" alt="Bottoms category">
+            <span class="badge">New</span>
+          </div>
+          <h4>Bottoms</h4>
+          <p>Jeans, trousers, and skirts for everyday wear.</p>
+          <a class="btn btn-sm" href="#">View Bottoms</a>
+        </article>
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1520975698518-9c8f1ab7c3b9?q=80&w=800&auto=format&fit=crop" alt="Outerwear category">
+            <span class="badge">Sale</span>
+          </div>
+          <h4>Outerwear</h4>
+          <p>Jackets and coats to finish any outfit.</p>
+          <a class="btn btn-sm" href="#">View Outerwear</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="featured" class="featured container">
+      <h3>Featured Products</h3>
+      <div class="grid-3">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1526178616624-0a29c0b6f0f7?q=80&w=800&auto=format&fit=crop" alt="Classic Tee">
+          <h4>Classic Tee</h4>
+          <p class="price">$29</p>
+          <a class="btn btn-sm js-add" href="#" data-name="Classic Tee">Add to Cart</a>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=800&auto=format&fit=crop" alt="Denim Jeans">
+          <h4>Denim Jeans</h4>
+          <p class="price">$79</p>
+          <a class="btn btn-sm js-add" href="#" data-name="Denim Jeans">Add to Cart</a>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1520975917172-7f4b4f2a7f3b?q=80&w=800&auto=format&fit=crop" alt="Light Jacket">
+          <h4>Light Jacket</h4>
+          <p class="price">$119</p>
+          <a class="btn btn-sm js-add" href="#" data-name="Light Jacket">Add to Cart</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h3>About WearU</h3>
+      <p>WearU is a small brand focused on sustainable materials and timeless design. We craft garments meant to be worn and loved season after season.</p>
+      <p>Contact: hello@wearu.example</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 WearU. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Instagram</a> · <a href="#">Twitter</a> · <a href="#">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+  <div id="toast" class="toast" aria-hidden="true"></div>
+  <script src="scripts.js"></script>
+</body>
+</html>
